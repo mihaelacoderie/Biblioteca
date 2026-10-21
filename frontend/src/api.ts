@@ -49,6 +49,10 @@ export async function api<T>(path: string, options: RequestInit = {}): Promise<T
   }
 
   const response = await fetch(path, { ...options, headers })
+    if (response.status === 401 && session && path !== '/api/auth/login') {
+    saveSession(null)
+    window.location.assign('/login')
+  }
 
   if (!response.ok) {
     let message = `Eroare ${response.status}`

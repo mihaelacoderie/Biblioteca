@@ -60,3 +60,93 @@ button:disabled {
   margin: 0 0 1rem;
   color: #b42318;
 }
+.page {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 1.5rem 1rem 3rem;
+}
+
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.badge {
+  margin-left: 0.5rem;
+  padding: 0.15rem 0.6rem;
+  border-radius: 999px;
+  background: #e0e7ff;
+  color: #3730a3;
+  font-size: 0.8rem;
+}
+
+.panel {
+  padding: 1.25rem 1.5rem;
+  margin-bottom: 1.5rem;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+}
+
+.panel h2 {
+  margin-top: 0;
+  font-size: 1.15rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+}
+
+.toolbar {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 1rem;
+}
+
+.secondary {
+  background: #e4e7eb;
+  color: #1f2933;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  padding: 0.6rem 0.5rem;
+  text-align: left;
+  border-bottom: 1px solid #e4e7eb;
+}
+
+th {
+  font-size: 0.85rem;
+  color: #52606d;
+}
+
+.muted {
+  color: #7b8794;
+}
+
+.ok {
+  color: #067647;
+}
+
+.user-row {
+  padding: 0.75rem 0;
+  border-bottom: 1px solid #e4e7eb;
+}
+
+.user-row:last-child {
+  border-bottom: 0;
+}
+
+.user-row ul {
+  margin: 0.4rem 0 0;
+  padding-left: 1.2rem;
+}
